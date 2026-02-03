@@ -1,0 +1,24 @@
+{
+  "checkout": {
+    "valido": {
+      "firstName": "Test",
+      "lastName": "User",
+      "postalCode": "12345"
+    },
+    "semFirstName": {
+      "lastName": "User",
+      "postalCode": "12345"
+    },
+    "semLastName": {
+      "firstName": "Test",
+      "postalCode": "12345"
+    },
+    "semPostalCode": {
+      "firstName": "Test",
+      "lastName": "User"
+    }
+  },
+  "produtos": {
+    "exemplo": "Sauce Labs Backpack"
+  }
+}

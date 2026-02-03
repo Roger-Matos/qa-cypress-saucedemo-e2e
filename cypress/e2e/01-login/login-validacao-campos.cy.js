@@ -1,10 +1,5 @@
-/**
- * Teste: Validação de campos obrigatórios no login
- * 
- * Cenário: Tentativa de login sem preencher campos
- * 
- * Validação: Deve validar obrigatoriedade dos campos
- */
+// Feature: Login
+// Scenario: Validação de campos obrigatórios no login
 
 
 

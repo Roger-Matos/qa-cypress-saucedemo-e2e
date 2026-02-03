@@ -1,10 +1,5 @@
-/**
- * Teste: Validar resumo da compra
- * 
- * Cenário: Validar informações exibidas no resumo antes da finalização
- * 
- * Validação: Deve exibir nome dos produtos, preço e taxa corretamente
- */
+// Feature: Finalização
+// Scenario: Validar resumo da compra
 
 
 

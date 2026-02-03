@@ -1,10 +1,5 @@
-/**
- * Teste: Acessar detalhe de um produto
- * 
- * Cenário: Clicar em um produto e visualizar seus detalhes
- * 
- * Validação: Deve exibir informações detalhadas do produto
- */
+// Feature: Produtos
+// Scenario: Acessar detalhe de um produto
 
 
 

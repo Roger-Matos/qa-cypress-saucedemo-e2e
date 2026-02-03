@@ -1,10 +1,5 @@
-/**
- * Teste: Validação de First Name no checkout
- * 
- * Cenário: Tentar fazer checkout sem preencher First Name
- * 
- * Validação: Deve exibir erro
- */
+// Feature: Checkout
+// Scenario: Validação de First Name no checkout
 
 
 

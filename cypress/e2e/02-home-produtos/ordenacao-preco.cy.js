@@ -1,10 +1,5 @@
-/**
- * Teste: Ordenação de produtos por preço
- * 
- * Cenário: Ordenar produtos por preço (menor → maior)
- * 
- * Validação: Deve reordenar corretamente
- */
+// Feature: Produtos
+// Scenario: Ordenação de produtos por preço
 
 
 

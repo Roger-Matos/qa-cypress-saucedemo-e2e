@@ -1,10 +1,5 @@
-/**
- * Teste: Logout
- * 
- * Cenário: Realizar logout do sistema
- * 
- * Validação: Deve voltar para tela de login
- */
+// Feature: Regressão
+// Scenario: Logout
 
 
 

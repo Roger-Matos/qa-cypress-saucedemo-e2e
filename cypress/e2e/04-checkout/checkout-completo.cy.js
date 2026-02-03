@@ -1,10 +1,5 @@
-/**
- * Teste: Checkout completo com dados válidos
- * 
- * Cenário: Realizar checkout completo com todos os dados preenchidos corretamente
- * 
- * Validação: Deve completar o checkout com sucesso
- */
+// Feature: Checkout
+// Scenario: Checkout completo com dados válidos
 
 
 

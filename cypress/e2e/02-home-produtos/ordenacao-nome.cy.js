@@ -1,10 +1,5 @@
-/**
- * Teste: Ordenação de produtos por nome
- * 
- * Cenário: Ordenar produtos por nome (A → Z)
- * 
- * Validação: Deve ordenar corretamente
- */
+// Feature: Produtos
+// Scenario: Ordenação de produtos por nome
 
 
 

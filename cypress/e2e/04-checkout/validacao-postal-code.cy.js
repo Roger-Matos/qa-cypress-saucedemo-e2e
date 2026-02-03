@@ -1,10 +1,5 @@
-/**
- * Teste: Validação de Postal Code no checkout
- * 
- * Cenário: Tentar fazer checkout sem preencher Postal Code
- * 
- * Validação: Deve exibir erro
- */
+// Feature: Checkout
+// Scenario: Validação de Postal Code no checkout
 
 
 

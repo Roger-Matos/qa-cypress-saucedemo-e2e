@@ -1,10 +1,5 @@
-/**
- * Teste: Finalizar compra com sucesso
- * 
- * Cenário: Completar todo o fluxo de compra até a finalização
- * 
- * Validação: Deve exibir mensagem "THANK YOU FOR YOUR ORDER"
- */
+// Feature: Finalização
+// Scenario: Finalizar compra com sucesso
 
 
 

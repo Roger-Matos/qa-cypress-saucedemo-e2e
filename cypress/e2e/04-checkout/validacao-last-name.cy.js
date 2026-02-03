@@ -1,10 +1,5 @@
-/**
- * Teste: Validação de Last Name no checkout
- * 
- * Cenário: Tentar fazer checkout sem preencher Last Name
- * 
- * Validação: Deve exibir erro
- */
+// Feature: Checkout
+// Scenario: Validação de Last Name no checkout
 
 
 

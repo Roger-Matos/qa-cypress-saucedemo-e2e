@@ -1,10 +1,5 @@
-/**
- * Teste: Adicionar produto ao carrinho pela home
- * 
- * Cenário: Adicionar produto ao carrinho a partir da página de listagem
- * 
- * Validação: Deve adicionar produto e atualizar badge do carrinho
- */
+// Feature: Carrinho
+// Scenario: Adicionar produto ao carrinho pela home
 
 
 

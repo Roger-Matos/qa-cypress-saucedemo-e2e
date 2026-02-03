@@ -1,12 +1,5 @@
-/**
- * Teste: Login com usuário válido
- * 
- * Cenário: Login com credenciais válidas
- * Usuário: standard_user
- * Senha: secret_sauce
- * 
- * Validação: Deve acessar a página de produtos
- */
+// Feature: Login
+// Scenario: Login com usuário válido
 
 
 

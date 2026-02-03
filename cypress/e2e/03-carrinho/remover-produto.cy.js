@@ -1,10 +1,5 @@
-/**
- * Teste: Remover produto do carrinho
- * 
- * Cenário: Remover produto que foi adicionado ao carrinho
- * 
- * Validação: Deve remover produto e atualizar badge
- */
+// Feature: Carrinho
+// Scenario: Remover produto do carrinho
 
 
 

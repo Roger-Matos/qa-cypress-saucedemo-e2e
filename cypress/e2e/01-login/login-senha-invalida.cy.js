@@ -1,10 +1,5 @@
-/**
- * Teste: Login com senha inválida
- * 
- * Cenário: Tentativa de login com senha incorreta
- * 
- * Validação: Deve exibir mensagem de erro
- */
+// Feature: Login
+// Scenario: Login com senha inválida
 
 
 

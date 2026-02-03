@@ -1,12 +1,5 @@
-/**
- * Teste: Login com usuário bloqueado
- * 
- * Cenário: Tentativa de login com usuário bloqueado
- * Usuário: locked_out_user
- * Senha: secret_sauce
- * 
- * Validação: Deve exibir mensagem informando bloqueio
- */
+// Feature: Login
+// Scenario: Login com usuário bloqueado
 
 
 

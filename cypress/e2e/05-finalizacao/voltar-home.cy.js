@@ -1,10 +1,5 @@
-/**
- * Teste: Voltar para home após compra
- * 
- * Cenário: Após finalizar compra, voltar para a página de produtos
- * 
- * Validação: Deve redirecionar para a página de produtos
- */
+// Feature: Finalização
+// Scenario: Voltar para home após compra
 
 
 

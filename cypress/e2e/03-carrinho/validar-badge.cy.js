@@ -1,10 +1,5 @@
-/**
- * Teste: Validar badge do carrinho com quantidade correta
- * 
- * Cenário: Adicionar múltiplos produtos e validar que o badge mostra a quantidade correta
- * 
- * Validação: Deve exibir quantidade correta no badge
- */
+// Feature: Carrinho
+// Scenario: Validar badge do carrinho com quantidade correta
 
 
 

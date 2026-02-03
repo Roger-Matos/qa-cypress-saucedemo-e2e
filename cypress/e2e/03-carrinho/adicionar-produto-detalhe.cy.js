@@ -1,10 +1,5 @@
-/**
- * Teste: Adicionar produto ao carrinho pela página de detalhe
- * 
- * Cenário: Adicionar produto ao carrinho a partir da página de detalhe do produto
- * 
- * Validação: Deve adicionar produto e atualizar badge
- */
+// Feature: Carrinho
+// Scenario: Adicionar produto ao carrinho pela página de detalhe
 
 
 

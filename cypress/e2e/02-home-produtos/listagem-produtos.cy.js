@@ -1,10 +1,5 @@
-/**
- * Teste: Listagem de produtos
- * 
- * Cenário: Validar exibição de todos os produtos na home
- * 
- * Validação: Deve exibir todos os produtos
- */
+// Feature: Produtos
+// Scenario: Listagem de produtos
 
 
 

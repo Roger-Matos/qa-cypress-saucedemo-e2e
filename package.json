@@ -1,7 +1,7 @@
 {
   "name": "portifolio-automacao-cypress",
   "version": "1.0.0",
-  "description": "Portfólio de automação E2E com Cypress - Sauce Demo",
+  "description": "Portfolio de automacao E2E com Cypress - Sauce Demo",
   "main": "index.js",
   "scripts": {
     "cy:open": "npx cypress open",

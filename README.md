@@ -6,7 +6,7 @@
 Projeto de automação de testes E2E com **Cypress + BDD (Gherkin)** usando o site de demonstração  
 🔗 https://www.saucedemo.com  
 
-Este repositório foi criado com foco em **portfólio profissional de QA**, demonstrando:
+Este repositório foi criado com foco em demonstrar minhas habilidades em:
 - Estrutura de testes escalável  
 - Boas práticas de automação  
 - Organização por fluxo de negócio  

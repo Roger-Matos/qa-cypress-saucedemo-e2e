@@ -1,60 +1,60 @@
-name: Cypress Tests
+name: Cypress Cross-Browser
 
 on:
-  push:
-    branches: [ main, master, develop ]
-  pull_request:
-    branches: [ main, master, develop ]
-  workflow_dispatch: 
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
-  cypress-run:
-    runs-on: ubuntu-latest
-    name: E2E Tests
-    
+  e2e:
+    name: E2E — ${{ matrix.browser }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 25
+
     strategy:
       fail-fast: false
       matrix:
-        
-        browser: [chrome, firefox, edge]
-    
+        include:
+          - browser: chrome
+            os: ubuntu-latest
+          - browser: firefox
+            os: ubuntu-latest
+          - browser: edge
+            os: windows-latest
+
     steps:
-      - name: Checkout código
+      - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Setup Node.js
+
+      - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'npm'
-      
+          node-version: 22
+          cache: npm
+
       - name: Instalar dependências
         run: npm ci
-      
-      - name: Instalar Cypress
-        run: npx cypress install
-      
-      - name: Executar testes Cypress
+
+      - name: Executar testes
         uses: cypress-io/github-action@v6
         with:
           browser: ${{ matrix.browser }}
-          start: npm run cy:run
-          wait-on: 'https://www.saucedemo.com'
-          wait-on-timeout: 120
-          record: false 
-      
-      - name: Upload screenshots em caso de falha
-        uses: actions/upload-artifact@v4
+
+      - name: Publicar screenshots de falha
         if: failure()
+        uses: actions/upload-artifact@v4
         with:
           name: cypress-screenshots-${{ matrix.browser }}
           path: cypress/screenshots
+          if-no-files-found: ignore
           retention-days: 7
-      
-      - name: Upload vídeos em caso de falha
-        uses: actions/upload-artifact@v4
+
+      - name: Publicar vídeos
         if: always()
+        uses: actions/upload-artifact@v4
         with:
           name: cypress-videos-${{ matrix.browser }}
           path: cypress/videos
+          if-no-files-found: ignore
           retention-days: 7

@@ -1,85 +1,103 @@
-#  QA Cypress E2E – SauceDemo Portfolio
+# QA Cypress E2E — SauceDemo
 
-[![Cypress Tests](https://github.com/Roger-Matos/qa-cypress-saucedemo-e2e/actions/workflows/cypress.yml/badge.svg)](https://github.com/Roger-Matos/qa-cypress-saucedemo-e2e/actions/workflows/cypress.yml)
-[![Cypress Chrome](https://github.com/Roger-Matos/qa-cypress-saucedemo-e2e/actions/workflows/cypress-chrome-only.yml/badge.svg)](https://github.com/Roger-Matos/qa-cypress-saucedemo-e2e/actions/workflows/cypress-chrome-only.yml)
+[![Chrome CI](https://github.com/Roger-Matos/qa-cypress-saucedemo-e2e/actions/workflows/cypress-chrome-only.yml/badge.svg)](https://github.com/Roger-Matos/qa-cypress-saucedemo-e2e/actions/workflows/cypress-chrome-only.yml)
+[![Cross-browser](https://github.com/Roger-Matos/qa-cypress-saucedemo-e2e/actions/workflows/cypress.yml/badge.svg)](https://github.com/Roger-Matos/qa-cypress-saucedemo-e2e/actions/workflows/cypress.yml)
 
-Projeto de automação de testes E2E com **Cypress + BDD (Gherkin)** usando o site de demonstração  
-🔗 https://www.saucedemo.com  
+Portfólio de automação E2E com **Cypress e JavaScript** sobre o ambiente público [SauceDemo](https://www.saucedemo.com/). O projeto demonstra organização por fluxos de negócio, reutilização de comandos, execução em CI e coleta de evidências para diagnóstico de falhas.
 
-Este repositório foi criado com foco em demonstrar minhas habilidades em:
-- Estrutura de testes escalável  
-- Boas práticas de automação  
-- Organização por fluxo de negócio  
-- Integração com CI/CD via GitHub Actions  
+## O que este projeto demonstra
 
----
+- Automação de jornadas críticas de e-commerce;
+- organização dos testes por domínio de negócio;
+- comandos e helpers reutilizáveis;
+- cenários de negócio documentados em BDD/Gherkin;
+- execução rápida no Chrome e regressão cross-browser;
+- screenshots e vídeos como evidências de falha.
 
-##  Objetivo
+> Os arquivos `.feature` documentam o comportamento esperado em Gherkin. Os testes executáveis são implementados nos arquivos `.cy.js`.
 
-Demonstrar experiência real em:
-- Automação E2E com Cypress  
-- Escrita de cenários BDD (Gherkin)  
-- Estrutura de projeto QA profissional  
-- Execução automatizada em pipeline (CI)
+## Cobertura
 
----
+| Fluxo | Principais validações |
+| --- | --- |
+| Login | Acesso válido, credenciais inválidas e mensagens de erro |
+| Produtos | Listagem, detalhes e ordenação |
+| Carrinho | Inclusão, remoção e persistência dos itens |
+| Checkout | Dados obrigatórios, resumo e conclusão da compra |
+| Regressão | Jornada completa do login à finalização |
 
-##  Estrutura do Projeto
+## Estrutura
 
 ```text
 cypress/
- └─ e2e/
-     ├─ 01-login/
-     ├─ 02-home-produtos/
-     ├─ 03-carrinho/
-     ├─ 04-checkout/
-     ├─ 05-finalizacao/
-     ├─ 06-regressao/
-     └─ features/
-         ├─ 01-login.feature
-         ├─ 02-produtos.feature
-         ├─ 03-carrinho.feature
-         ├─ 04-checkout.feature
-         ├─ 05-finalizacao.feature
-         └─ 06-regressao.feature
-Cada pasta representa um fluxo de negócio do sistema.
+  e2e/
+    01-login/
+    02-home-produtos/
+    03-carrinho/
+    04-checkout/
+    05-finalizacao/
+    06-regressao/
+    features/
+  support/
+    commands/
+    helpers/
+```
 
-Os arquivos .feature descrevem os cenários em BDD (Gherkin), e os arquivos .cy.js implementam a automação no Cypress.
+Cada pasta de `e2e` representa um fluxo de negócio. Os comandos personalizados concentram ações reutilizáveis e os helpers apoiam sincronização e interação.
 
- Fluxos Automatizados
-✔ Login
-✔ Listagem de produtos
-✔ Adição ao carrinho
-✔ Validações no checkout
-✔ Finalização da compra
-✔ Fluxo de regressão completo
+## Tecnologias
 
-Execução Local
-1️⃣ Instalar dependências
-npm install
-2️⃣ Abrir Cypress (modo interativo)
-npx cypress open
-3️⃣ Rodar todos os testes (headless)
-npx cypress run
-🔄 CI/CD – GitHub Actions
-Este projeto possui dois pipelines:
+- Cypress 15;
+- JavaScript;
+- Node.js;
+- BDD/Gherkin para documentação dos cenários;
+- GitHub Actions.
 
-Workflow	Descrição
-cypress.yml	Executa todos os testes em ambiente CI
-cypress-chrome-only.yml	Executa os testes apenas no Chrome (mais rápido)
-Os testes rodam automaticamente a cada push ou pull request.
+## Pré-requisitos
 
- Tecnologias
-Cypress
+- Node.js 22;
+- npm compatível com o lockfile;
+- Chrome e Firefox para execução cross-browser local.
 
-JavaScript
+## Início rápido
 
-BDD (Gherkin / Cucumber)
+```bash
+npm ci
+npm run cy:open
+```
 
-GitHub Actions
+Para executar em modo headless:
 
-Node.js
+```bash
+npm run cy:run
+```
 
- Autor
-Roger Matos
-QA Engineer | Automação de Testes | Cypress | CI/CD
+## Comandos
+
+| Comando | Objetivo |
+| --- | --- |
+| `npm run cy:open` | Abre a interface interativa do Cypress |
+| `npm run cy:run` | Executa toda a suíte em modo headless |
+| `npm run cy:run:chrome` | Executa a suíte no Chrome |
+| `npm run cy:run:firefox` | Executa a suíte no Firefox |
+| `npm run cy:run:edge` | Executa a suíte no Edge |
+
+## CI/CD
+
+O projeto utiliza duas estratégias no GitHub Actions:
+
+- **Chrome CI:** validação automática em pushes e pull requests para a branch `main`;
+- **Cross-browser:** regressão manual em Chrome, Firefox e Edge.
+
+Em caso de falha, screenshots são enviados como artefatos. Os vídeos são preservados ao final das execuções para facilitar a investigação.
+
+## Limitações conhecidas
+
+- Os testes dependem da disponibilidade e dos dados do ambiente público SauceDemo;
+- os arquivos Gherkin documentam os cenários, mas não são executados por um preprocessor Cucumber.
+
+## Autor
+
+**Roger Matos** — Analista de QA Pleno | QA Automation Engineer
+
+[LinkedIn](https://www.linkedin.com/in/roger-matos/) | [GitHub](https://github.com/Roger-Matos) | [E-mail](mailto:rogergabrielhid@gmail.com)

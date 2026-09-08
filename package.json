@@ -1,23 +1,36 @@
 {
-  "name": "portifolio-automacao-cypress",
+  "name": "qa-cypress-saucedemo-e2e",
   "version": "1.0.0",
-  "description": "Portfolio de automacao E2E com Cypress - Sauce Demo",
-  "main": "index.js",
+  "private": true,
+  "description": "Portfólio de automação E2E com Cypress e JavaScript sobre o SauceDemo.",
   "scripts": {
-    "cy:open": "npx cypress open",
-    "cy:run": "npx cypress run",
-    "cy:run:chrome": "npx cypress run --browser chrome",
-    "cy:run:firefox": "npx cypress run --browser firefox",
-    "cy:run:edge": "npx cypress run --browser edge"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:edge": "cypress run --browser edge"
   },
   "keywords": [
+    "quality-assurance",
+    "test-automation",
     "cypress",
-    "e2e",
-    "automation",
-    "testing"
+    "e2e-testing",
+    "javascript",
+    "github-actions"
   ],
-  "author": "",
+  "author": "Roger Matos",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roger-Matos/qa-cypress-saucedemo-e2e.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Roger-Matos/qa-cypress-saucedemo-e2e/issues"
+  },
+  "homepage": "https://github.com/Roger-Matos/qa-cypress-saucedemo-e2e#readme",
+  "engines": {
+    "node": ">=22 <23"
+  },
   "devDependencies": {
     "cypress": "^15.3.0"
   }
